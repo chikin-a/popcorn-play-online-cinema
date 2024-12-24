@@ -9,6 +9,8 @@ export class CreateMovieDto {
 
   status: 'anons' | 'finish';
 
+  MPAA: 'G' | 'PG' | 'PG-13' | 'R' | 'NC-17';
+
   @IsNotEmpty()
   genres: string[];
 
