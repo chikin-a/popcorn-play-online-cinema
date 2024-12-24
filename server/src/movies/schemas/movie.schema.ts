@@ -14,7 +14,8 @@ export class Movie {
   @Prop({ required: true, default: 'finish' })
   status: 'anons' | 'finish';
 
-  // Додати вікове обмеження
+  @Prop({ required: false })
+  MPAA: 'G' | 'PG' | 'PG-13' | 'R' | 'NC-17';
 
   @Prop({ required: true })
   genres: string[];
